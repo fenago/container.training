@@ -35,7 +35,7 @@ spec:
     - |
       apk add --no-cache git &&
       mkdir /workspace &&
-      git clone https://github.com/jpetazzo/container.training /workspace &&
+      git clone https://github.com/fenago/container.training /workspace &&
       docker build -t localhost:$REGISTRY_PORT/worker /workspace/dockercoins/worker &&
       docker push localhost:$REGISTRY_PORT/worker
     volumeMounts:

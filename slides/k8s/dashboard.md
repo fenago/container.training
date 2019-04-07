@@ -167,7 +167,7 @@ The dashboard will then ask you which authentication you want to use.
 
 ## Editing the `kubernetes-dashboard` service
 
-- If we look at the [YAML](https://github.com/jpetazzo/container.training/blob/master/k8s/kubernetes-dashboard.yaml) that we loaded before, we'll get a hint
+- If we look at the [YAML](https://github.com/fenago/container.training/blob/master/k8s/kubernetes-dashboard.yaml) that we loaded before, we'll get a hint
 
 --
 
