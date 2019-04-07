@@ -6,12 +6,12 @@
 
 - You can get updated "builds" of the slides there:
 
-  http://container.training/
+  http://LearningVoyage.com
 
 <!--
 .exercise[
 ```open https://@@GITREPO@@```
-```open http://container.training/```
+```open http://learningvoyage.com```
 ]
 -->
 
