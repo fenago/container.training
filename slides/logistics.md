@@ -1,15 +1,18 @@
 ## Intros
 
-- This slide should be customized by the tutorial instructor(s).
+- - Please introduce yourself and tell us:  who you are?  why you are here?  what is your experience in the subject?
 
-- Hello! We are:
+- Hello! We are...
+
 
    - .emoji[👩🏻‍🏫] Ann O'Nymous ([@...](https://twitter.com/...), Megacorp Inc)
 
    - .emoji[👨🏾‍🎓] Stu Dent ([@...](https://twitter.com/...), University of Wakanda)
 
  <!-- .dummy[
+[👩🏻‍🏫] Ann O'Nymous ([@...](https://twitter.com/...), Megacorp Inc)
 
+   - .emoji[👨🏾‍🎓] Stu Dent ([@...](https://twitter.com/...), University of Wakanda)
    - .emoji[👷🏻‍♀️] AJ ([@s0ulshake](https://twitter.com/s0ulshake), Travis CI)
 
    - .emoji[🚁] Alexandre ([@alexbuisine](https://twitter.com/alexbuisine), Enix SAS)
