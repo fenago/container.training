@@ -197,7 +197,7 @@ will have equal success with Fluent or other logging stacks!*
 - The Compose file is in the container.training repository on GitHub.
 
 ```bash
-$ git clone https://github.com/jpetazzo/container.training
+$ git clone https://github.com/fenago/container.training
 $ cd container.training
 $ cd elk
 $ docker-compose up
@@ -295,4 +295,4 @@ that you don't drop messages on the floor. Good luck.
 
 If you want to learn more about the GELF driver,
 have a look at [this blog post](
-https://jpetazzo.github.io/2017/01/20/docker-logging-gelf/).
+https://fenago.github.io/2017/01/20/docker-logging-gelf/).
