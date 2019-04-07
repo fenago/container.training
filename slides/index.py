@@ -117,7 +117,7 @@ TEMPLATE="""<html>
 
       <tr>
         <td class="footer">
-          Maintained by Jérôme Petazzoni (<a href="https://twitter.com/jpetazzo">@jpetazzo</a>) and <a href="https://github.com/jpetazzo/container.training/graphs/contributors">contributors</a>.
+          Maintained by Jérôme Petazzoni (<a href="https://twitter.com/fenago">@fenago</a>) and <a href="https://github.com/fenago/container.training/graphs/contributors">contributors</a>.
         </td>
       </tr>
     </table>
