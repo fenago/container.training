@@ -9,7 +9,7 @@ class: title
 
 ## Our training environment
 
-- If you are attending a tutorial or workshop:
+- If you are attending a LearningVoyage.com class:
 
   - a VM has been provisioned for each student
 
