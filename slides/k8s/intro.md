@@ -1,7 +1,6 @@
 ## A brief introduction
 
-- This was initially written by [Jérôme Petazzoni](https://twitter.com/jpetazzo) to support in-person,
-  instructor-led workshops and tutorials
+- This was initially written by [Jérôme Petazzoni](https://twitter.com/jpetazzo) and was forked by [LearningVoyage.com](http://www.LearningVoyage.com) as a foundational course for microservices.
   
 - Credit is also due to [multiple contributors](https://@@GITREPO@@/graphs/contributors) — thank you!
 
@@ -21,9 +20,9 @@ class: self-paced
 
 ## Hands on, you shall practice
 
-- Nobody ever became a Jedi by spending their lives reading Wookiepedia
+- I hated every minute of training, but I said, 'Don't quit. Suffer now and live the rest of your life as a champion.' Muhammad Ali
 
-- Likewise, it will take more than merely *reading* these slides
+- Likewise, it will take more than following along with the Instructor
   to make you an expert
 
 - These slides include *tons* of exercises and examples
