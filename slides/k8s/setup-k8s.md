@@ -91,3 +91,15 @@
 - For a longer list, check the Kubernetes documentation:
   <br/>
   it has a great guide to [pick the right solution](https://kubernetes.io/docs/setup/pick-right-solution/) to set up Kubernetes.
+---
+
+## The Easy Path to Standing up K8S
+
+- Go to DigitalOcean.com
+  [Digital Ocean](https://digitalocean.com)
+
+- Select Manage -> Kubernetes 
+
+- Create a standard 2 node cluster and follow the instructions to SSH into your head node.
+  *note that you will only have a limited number of internet facing IP addresses
+- Also, hard lesson learned - make sure that you take your instance DOWN when you are finished
