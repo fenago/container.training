@@ -1,8 +1,5 @@
 ## About these slides
 
-- All the content is available in a public GitHub repository:
-
-  https://@@GITREPO@@
 
 - You can get updated "builds" of the slides there:
 
