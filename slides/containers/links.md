@@ -9,4 +9,3 @@
 - [Docker on Twitter](https://twitter.com/docker)
 - [Play With Docker Hands-On Labs](https://training.play-with-docker.com/)
 
-.footnote[These slides (and future updates) are on → http://learningvoyage.com]
