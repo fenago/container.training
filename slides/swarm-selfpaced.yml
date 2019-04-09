@@ -4,9 +4,9 @@ title: |
 
 chat: "[Slack](https://dockercommunity.slack.com/messages/C7GKACWDV)"
 
-gitrepo: github.com/jpetazzo/container.training
+gitrepo: github.com/jpetazzo/LearningVoyage.com
 
-slides: http://container.training/
+slides: http://LearningVoyage.com/
 
 exclude:
 - in-person

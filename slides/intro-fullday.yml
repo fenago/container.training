@@ -3,11 +3,11 @@ title: |
   to Containers
 
 chat: "[Slack](https://dockercommunity.slack.com/messages/C7GKACWDV)"
-#chat: "[Gitter](https://gitter.im/jpetazzo/workshop-yyyymmdd-city)"
+#chat: "[Gitter](https://gitter.im/fenago/workshop-yyyymmdd-city)"
 
-gitrepo: github.com/jpetazzo/container.training
+gitrepo: github.com/fenago/LearningVoyage.com
 
-slides: http://container.training/
+slides: http://LearningVoyage.com/
 
 exclude:
 - self-paced

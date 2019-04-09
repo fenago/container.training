@@ -31,12 +31,23 @@ Deploying and Scaling Microservices<br/>with Kubernetes<br/>
 ```
  M slides/containers/Logging.md
  M slides/index.py
+ M slides/intro-fullday.yml
+ M slides/intro-selfpaced.yml
  M slides/k8s/build-with-docker.md
  M slides/k8s/dashboard.md
+ M slides/k8s/links-bridget.md
  M slides/k8s/logs-centralized.md
+ M slides/kube-fullday.yml
+ M slides/kube-halfday.yml
+ M slides/kube-selfpaced.yml
+ M slides/kube-twodays.yml
  M slides/logistics.md
  M slides/shared/about-slides.md
  M slides/shared/title.md
+ M slides/swarm-fullday.yml
+ M slides/swarm-halfday.yml
+ M slides/swarm-selfpaced.yml
+ M slides/swarm-video.yml
 ?? slides/PyYAML-3.12/
 
 ```
@@ -107,7 +118,7 @@ Deploying and Scaling Microservices<br/>with Kubernetes<br/><br/></br>
 
 - This was initially written by [Jérôme Petazzoni](https://twitter.com/jpetazzo) and was forked by [LearningVoyage.com](http://www.LearningVoyage.com) as a foundational course for microservices.
   
-- Credit is also due to [multiple contributors](https://github.com/jpetazzo/container.training/graphs/contributors) — thank you!
+- Credit is also due to [multiple contributors](https://github.com/fenago/LearningVoyage.com/graphs/contributors) — thank you!
 
 - You can also follow along on your own, at your own pace
 
@@ -152,7 +163,7 @@ class: self-paced
 
 <!--
 .exercise[
-```open https://github.com/jpetazzo/container.training```
+```open https://github.com/fenago/LearningVoyage.com```
 ```open http://learningvoyage.com```
 ]
 -->
@@ -165,7 +176,7 @@ class: self-paced
 
 <!--
 .exercise[
-```open https://github.com/jpetazzo/container.training/tree/master/slides/common/about-slides.md```
+```open https://github.com/fenago/LearningVoyage.com/tree/master/slides/common/about-slides.md```
 ]
 -->
 
@@ -348,11 +359,11 @@ Misattributed to Benjamin Franklin
 
 - This is the stuff you're supposed to do!
 
-- Go to http://container.training/ to view these slides
+- Go to http://LearningVoyage.com/ to view these slides
 
 - Join the chat room: In person!
 
-<!-- ```open http://container.training/``` -->
+<!-- ```open http://LearningVoyage.com/``` -->
 
 ]
 
@@ -533,7 +544,7 @@ If anything goes wrong — ask for help!
   Small setup effort; small cost; flexible environments
 
 - Create a bunch of clusters for you and your friends
-    ([instructions](https://github.com/jpetazzo/container.training/tree/master/prepare-vms))
+    ([instructions](https://github.com/fenago/LearningVoyage.com/tree/master/prepare-vms))
 
   Bigger setup effort; ideal for group training
 
@@ -715,7 +726,7 @@ fi
 
 - Clone the repository on `node1`:
   ```bash
-  git clone https://github.com/jpetazzo/container.training
+  git clone https://github.com/fenago/LearningVoyage.com
   ```
 
 ]
@@ -801,7 +812,7 @@ and displays aggregated logs.
 
 - These 5 services are visible in the application's Compose file,
   [docker-compose.yml](
-  https://github.com/jpetazzo/container.training/blob/master/dockercoins/docker-compose.yml)
+  https://github.com/fenago/LearningVoyage.com/blob/master/dockercoins/docker-compose.yml)
 
 .debug[[shared/sampleapp.md](https://github.com/fenago/container.training.git/tree/master/slides/shared/sampleapp.md)]
 ---
@@ -865,7 +876,7 @@ def hash_bytes(data):
 ```
 
 (Full source code available [here](
-https://github.com/jpetazzo/container.training/blob/8279a3bce9398f7c1a53bdd95187c53eda4e6435/dockercoins/worker/worker.py#L17
+https://github.com/fenago/LearningVoyage.com/blob/8279a3bce9398f7c1a53bdd95187c53eda4e6435/dockercoins/worker/worker.py#L17
 ))
 
 .debug[[shared/sampleapp.md](https://github.com/fenago/container.training.git/tree/master/slides/shared/sampleapp.md)]
@@ -895,14 +906,14 @@ class: extra-details
 ## Show me the code!
 
 - You can check the GitHub repository with all the materials of this workshop:
-  <br/>https://github.com/jpetazzo/container.training
+  <br/>https://github.com/fenago/LearningVoyage.com
 
 - The application is in the [dockercoins](
-  https://github.com/jpetazzo/container.training/tree/master/dockercoins)
+  https://github.com/fenago/LearningVoyage.com/tree/master/dockercoins)
   subdirectory
 
 - The Compose file ([docker-compose.yml](
-  https://github.com/jpetazzo/container.training/blob/master/dockercoins/docker-compose.yml))
+  https://github.com/fenago/LearningVoyage.com/blob/master/dockercoins/docker-compose.yml))
   lists all 5 services
 
 - `redis` is using an official image from the Docker Hub
@@ -911,8 +922,8 @@ class: extra-details
 
 - Each service's Dockerfile and source code is in its own directory
 
-  (`hasher` is in the [hasher](https://github.com/jpetazzo/container.training/blob/master/dockercoins/hasher/) directory,
-  `rng` is in the [rng](https://github.com/jpetazzo/container.training/blob/master/dockercoins/rng/)
+  (`hasher` is in the [hasher](https://github.com/fenago/LearningVoyage.com/blob/master/dockercoins/hasher/) directory,
+  `rng` is in the [rng](https://github.com/fenago/LearningVoyage.com/blob/master/dockercoins/rng/)
   directory, etc.)
 
 .debug[[shared/sampleapp.md](https://github.com/fenago/container.training.git/tree/master/slides/shared/sampleapp.md)]
@@ -2254,7 +2265,7 @@ Setting up Kubernetes
 
     6. Copy the configuration file generated by `kubeadm init`
 
-- Check the [prepare VMs README](https://github.com/jpetazzo/container.training/blob/master/prepare-vms/README.md) for more details
+- Check the [prepare VMs README](https://github.com/fenago/LearningVoyage.com/blob/master/prepare-vms/README.md) for more details
 
 .debug[[k8s/setup-k8s.md](https://github.com/fenago/container.training.git/tree/master/slides/k8s/setup-k8s.md)]
 ---

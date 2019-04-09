@@ -31,12 +31,23 @@ Container Orchestration<br/>with Docker and Swarm<br/>
 ```
  M slides/containers/Logging.md
  M slides/index.py
+ M slides/intro-fullday.yml
+ M slides/intro-selfpaced.yml
  M slides/k8s/build-with-docker.md
  M slides/k8s/dashboard.md
+ M slides/k8s/links-bridget.md
  M slides/k8s/logs-centralized.md
+ M slides/kube-fullday.yml
+ M slides/kube-halfday.yml
+ M slides/kube-selfpaced.yml
+ M slides/kube-twodays.yml
  M slides/logistics.md
  M slides/shared/about-slides.md
  M slides/shared/title.md
+ M slides/swarm-fullday.yml
+ M slides/swarm-halfday.yml
+ M slides/swarm-selfpaced.yml
+ M slides/swarm-video.yml
 ?? slides/PyYAML-3.12/
 
 ```
@@ -66,7 +77,7 @@ Container Orchestration<br/>with Docker and Swarm<br/><br/></br>
 
 - This was initially written by [Jérôme Petazzoni](https://twitter.com/jpetazzo) and forked by [LearningVoyage.com](http://learningvoyage.com) to support a microservices curriculum
 
-- Over time, [multiple contributors](https://github.com/jpetazzo/container.training/graphs/contributors) also helped to improve these materials — thank you!
+- Over time, [multiple contributors](https://github.com/jpetazzo/LearningVoyage.com/graphs/contributors) also helped to improve these materials — thank you!
 
 - You can also follow along on your own, at your own pace
 
@@ -114,7 +125,7 @@ class: self-paced
 
 <!--
 .exercise[
-```open https://github.com/jpetazzo/container.training```
+```open https://github.com/jpetazzo/LearningVoyage.com```
 ```open http://learningvoyage.com```
 ]
 -->
@@ -127,7 +138,7 @@ class: self-paced
 
 <!--
 .exercise[
-```open https://github.com/jpetazzo/container.training/tree/master/slides/common/about-slides.md```
+```open https://github.com/jpetazzo/LearningVoyage.com/tree/master/slides/common/about-slides.md```
 ]
 -->
 
@@ -314,11 +325,11 @@ Misattributed to Benjamin Franklin
 
 - This is the stuff you're supposed to do!
 
-- Go to http://container.training/ to view these slides
+- Go to http://LearningVoyage.com/ to view these slides
 
 - Join the chat room: [Slack](https://dockercommunity.slack.com/messages/C7GKACWDV)
 
-<!-- ```open http://container.training/``` -->
+<!-- ```open http://LearningVoyage.com/``` -->
 
 ]
 
@@ -499,7 +510,7 @@ If anything goes wrong — ask for help!
   Small setup effort; small cost; flexible environments
 
 - Create a bunch of clusters for you and your friends
-    ([instructions](https://github.com/jpetazzo/container.training/tree/master/prepare-vms))
+    ([instructions](https://github.com/jpetazzo/LearningVoyage.com/tree/master/prepare-vms))
 
   Bigger setup effort; ideal for group training
 
@@ -748,7 +759,7 @@ fi
 
 - Clone the repository on `node1`:
   ```bash
-  git clone https://github.com/jpetazzo/container.training
+  git clone https://github.com/jpetazzo/LearningVoyage.com
   ```
 
 ]
@@ -834,7 +845,7 @@ and displays aggregated logs.
 
 - These 5 services are visible in the application's Compose file,
   [docker-compose.yml](
-  https://github.com/jpetazzo/container.training/blob/master/dockercoins/docker-compose.yml)
+  https://github.com/jpetazzo/LearningVoyage.com/blob/master/dockercoins/docker-compose.yml)
 
 .debug[[shared/sampleapp.md](https://github.com/fenago/container.training.git/tree/master/slides/shared/sampleapp.md)]
 ---
@@ -898,7 +909,7 @@ def hash_bytes(data):
 ```
 
 (Full source code available [here](
-https://github.com/jpetazzo/container.training/blob/8279a3bce9398f7c1a53bdd95187c53eda4e6435/dockercoins/worker/worker.py#L17
+https://github.com/jpetazzo/LearningVoyage.com/blob/8279a3bce9398f7c1a53bdd95187c53eda4e6435/dockercoins/worker/worker.py#L17
 ))
 
 .debug[[shared/sampleapp.md](https://github.com/fenago/container.training.git/tree/master/slides/shared/sampleapp.md)]
@@ -928,14 +939,14 @@ class: extra-details
 ## Show me the code!
 
 - You can check the GitHub repository with all the materials of this workshop:
-  <br/>https://github.com/jpetazzo/container.training
+  <br/>https://github.com/jpetazzo/LearningVoyage.com
 
 - The application is in the [dockercoins](
-  https://github.com/jpetazzo/container.training/tree/master/dockercoins)
+  https://github.com/jpetazzo/LearningVoyage.com/tree/master/dockercoins)
   subdirectory
 
 - The Compose file ([docker-compose.yml](
-  https://github.com/jpetazzo/container.training/blob/master/dockercoins/docker-compose.yml))
+  https://github.com/jpetazzo/LearningVoyage.com/blob/master/dockercoins/docker-compose.yml))
   lists all 5 services
 
 - `redis` is using an official image from the Docker Hub
@@ -944,8 +955,8 @@ class: extra-details
 
 - Each service's Dockerfile and source code is in its own directory
 
-  (`hasher` is in the [hasher](https://github.com/jpetazzo/container.training/blob/master/dockercoins/hasher/) directory,
-  `rng` is in the [rng](https://github.com/jpetazzo/container.training/blob/master/dockercoins/rng/)
+  (`hasher` is in the [hasher](https://github.com/jpetazzo/LearningVoyage.com/blob/master/dockercoins/hasher/) directory,
+  `rng` is in the [rng](https://github.com/jpetazzo/LearningVoyage.com/blob/master/dockercoins/rng/)
   directory, etc.)
 
 .debug[[shared/sampleapp.md](https://github.com/fenago/container.training.git/tree/master/slides/shared/sampleapp.md)]
@@ -4101,7 +4112,7 @@ TOKEN=$(docker swarm join-token -q manager)
 for N in $(seq 2 5); do
   DOCKER_HOST=tcp://node$N:2375 docker swarm join --token $TOKEN node1:2377
 done
-git clone https://github.com/jpetazzo/container.training
+git clone https://github.com/jpetazzo/LearningVoyage.com
 cd container.training/stacks
 docker stack deploy --compose-file registry.yml registry
 docker-compose -f dockercoins.yml build
@@ -5859,7 +5870,7 @@ This will display the unlock key. Copy-paste it somewhere safe.
 ]
 
 Note: if you are doing the workshop on your own, using nodes
-that you [provisioned yourself](https://github.com/jpetazzo/container.training/tree/master/prepare-machine) or with [Play-With-Docker](https://play-with-docker.com/), you might have to use a different method to restart the Engine.
+that you [provisioned yourself](https://github.com/jpetazzo/LearningVoyage.com/tree/master/prepare-machine) or with [Play-With-Docker](https://play-with-docker.com/), you might have to use a different method to restart the Engine.
 
 .debug[[swarm/encryptionatrest.md](https://github.com/fenago/container.training.git/tree/master/slides/swarm/encryptionatrest.md)]
 ---
@@ -6272,7 +6283,7 @@ class: elk-manual
 
 - We could author a custom image bundling this configuration
 
-- We can also pass the [configuration](https://github.com/jpetazzo/container.training/blob/master/elk/logstash.conf) on the command line
+- We can also pass the [configuration](https://github.com/jpetazzo/LearningVoyage.com/blob/master/elk/logstash.conf) on the command line
 
 .exercise[
 
@@ -6357,7 +6368,7 @@ class: elk-auto
 Note: the *build* and *push* steps are not strictly necessary, but they don't hurt!
 
 Let's have a look at the [Compose file](
-https://github.com/jpetazzo/container.training/blob/master/stacks/elk.yml).
+https://github.com/jpetazzo/LearningVoyage.com/blob/master/stacks/elk.yml).
 
 .debug[[swarm/logging.md](https://github.com/fenago/container.training.git/tree/master/slides/swarm/logging.md)]
 ---
