@@ -1,9 +1,7 @@
 ## A brief introduction
 
-- This was initially written by [Jérôme Petazzoni](https://twitter.com/jpetazzo) and was forked by [LearningVoyage.com](http://www.LearningVoyage.com) as a foundational course for microservices.
+- This was initially written by [Jérôme Petazzoni](https://twitter.com/jpetazzo) and was forked by [Ernesto Lee](http://www.LearningVoyage.com) as a foundational course for microservices and to give an intuition of services architectures such as OpenShift.  Please contact me if you would like a sandbox kubernetes or kubernetes environment to do the activities.
   
-- Credit is also due to [multiple contributors](https://@@GITREPO@@/graphs/contributors) — thank you!
-
 - You can also follow along on your own, at your own pace
 
 - We included as much information as possible in these slides
