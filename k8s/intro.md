@@ -1,12 +1,12 @@
 ## A brief introduction
 
-- This was initially written by [Jérôme Petazzoni](https://twitter.com/jpetazzo) and was forked by [Ernesto Lee](http://www.LearningVoyage.com) as a foundational course for microservices and to give an intuition of services architectures such as OpenShift.  Please contact me if you would like a sandbox kubernetes or kubernetes environment to do the activities.
+- Ernesto designed this course as a foundational course for microservices and to give an intuition of services architectures such as OpenShift.  Please contact me if you would like a sandbox kubernetes or kubernetes environment to do the activities.  
   
 - You can also follow along on your own, at your own pace
 
-- We included as much information as possible in these slides
+- I included as much information as possible in these slides
 
-- We recommend having a mentor to help you ...
+- I recommend having a mentor to help you ...
 
 - ... Or be comfortable spending some time reading the Kubernetes [documentation](https://kubernetes.io/docs/) ...
 
